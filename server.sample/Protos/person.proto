@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server.Sample";
+
+package person;
+
+service PersonGrpc {
+  rpc GetPerson (PersonRequest) returns (PersonResponse);
+  rpc GetAllPersons (Empty) returns (PersonListResponse);
+}
+
+message Person {
+  int32 id = 1;
+  string name = 2;
+  string email = 3;
+}
+
+message PersonRequest {
+  int32 id = 1;
+}
+
+message PersonResponse {
+  Person person = 1;
+}
+
+message PersonListResponse {
+  repeated Person persons = 1;
+}
+
+message Empty {}
