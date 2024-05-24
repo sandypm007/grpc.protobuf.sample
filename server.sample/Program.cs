@@ -1,4 +1,4 @@
-using server.sample.Services;
+using Server.Sample.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

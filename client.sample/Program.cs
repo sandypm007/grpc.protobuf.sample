@@ -1,7 +1,5 @@
-﻿using System;
-using System.Threading.Tasks;
-using Grpc.Net.Client;
-using server.sample;
+﻿using Grpc.Net.Client;
+using Client.Sample;
 
 class Program
 {
